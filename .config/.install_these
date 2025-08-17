@@ -1,6 +1,7 @@
 * install fish-shell
 git clone https://github.com/fish-shell/fish-shell.git
-cd fish-shell; mkdir build ; cd build ; cmake ..; make; sudo make install 
+#cd fish-shell; mkdir build ; cd build ; cmake ..; make; sudo make install 
+cd fish-shell; mkdir build ; cd build ; cmake ..; cmake --build .;sudo cmake --install .
 	*if MACOS
 		mkdir build; cd build
 		cmake .. -G Xcode -DBUILD_DOCS=OFF -DCMAKE_BUILD_TYPE=RelWithDebInfo

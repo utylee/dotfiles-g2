@@ -1,11 +1,11 @@
-sw_volume: 80
+sw_volume: 74
 audio_device_state:1:My ALSA Device
 audio_device_state:1:FLAC Stream
 audio_device_state:1:MP3 Stream
 audio_device_state:1:My Pulse Output
 state: play
-current: 3230
-time: 120.081000
+current: 3843
+time: 75.541000
 random: 1
 repeat: 1
 single: 0

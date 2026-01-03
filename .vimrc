@@ -11,8 +11,8 @@ runtime macros/matchit.vim
 
 augroup remember_folds
   autocmd!
-  autocmd BufWinLeave * mkview
-  autocmd BufWinEnter * silent! loadview
+  autocmd BufWinLeave ?* mkview 1
+  autocmd BufWinEnter ?* silent! loadview 1
 augroup END
 
 "이게 있으니 :term가 아니고 기본 sh 로 되어 ts.fish이 실행이 안됩니다
@@ -67,6 +67,7 @@ let g:terminal_ansi_colors = [
     \ '#839496', '#6c71c4', '#93a1a1', '#fdf6e3']
 
 " coc setups  ---------------------------------------------------------
+set signcolumn=yes
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -209,6 +210,7 @@ set backspace=indent,eol,start
 "" insert mode
 "autocmd CursorMovedI * if pumvisible() == 0|pclose|endif
 "autocmd InsertLeave * if pumvisible() == 0|pclose|endif
+
 
 " 변경된 버퍼를 저장하지 않고도 버퍼간 이동을 가능하게끔합니다
 set hidden

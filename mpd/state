@@ -4,8 +4,8 @@ audio_device_state:1:FLAC Stream
 audio_device_state:1:MP3 Stream
 audio_device_state:1:My Pulse Output
 state: play
-current: 3843
-time: 75.541000
+current: 7245
+time: 75.552000
 random: 1
 repeat: 1
 single: 0

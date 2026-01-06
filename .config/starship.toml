@@ -15,10 +15,11 @@ add_newline = false
 #vicmd_symbol = "[N](fg:14 bold)"
 ##vicmd_symbol = "[❮](bold #207dab)"
 # [G2](bold fg:#53cfcc)\
+# [G2](bold fg:#2c809e)\
 
 format = """
 $python\
-[G2](bold fg:#2c809e)\
+[G2](bold fg:#39706b)\
 $username\
 $directory\
 $git_branch$git_commit\
@@ -26,7 +27,8 @@ $character\
 """
 [character]
 # success_symbol = "[❯](bold #53cfcc)"
-success_symbol = "[❯](bold #2c809e)"
+# success_symbol = "[❯](bold #2c809e)"
+success_symbol = "[❯](bold #39706b)"
 #error_symbol = "[✗](fg:1)"
 #error_symbol = "[❯](fg:1)"
 error_symbol = "[❯](fg:9)"

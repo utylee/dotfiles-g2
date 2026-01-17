@@ -2,8 +2,8 @@ sw_volume: 68
 audio_device_state:1:FLAC Stream
 audio_device_state:1:MP3 Stream
 state: play
-current: 8111
-time: 120.081000
+current: 2209
+time: 120.092000
 random: 1
 repeat: 1
 single: 0

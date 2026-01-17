@@ -17,10 +17,11 @@ add_newline = false
 # [G2](bold fg:#53cfcc)\
 # [G2](bold fg:#2c809e)\
 # [G2](bold fg:#39706b)\
+# [G2](bold fg:#47a198)\
 
 format = """
 $python\
-[G2](bold fg:#47a198)\
+[G2](bold fg:#679e8a)\
 $username\
 $directory\
 $git_branch$git_commit\
@@ -30,7 +31,8 @@ $character\
 # success_symbol = "[❯](bold #53cfcc)"
 # success_symbol = "[❯](bold #2c809e)"
 # success_symbol = "[❯](bold #39706b)"
-success_symbol = "[❯](bold #47a198)"
+# success_symbol = "[❯](bold #47a198)"
+success_symbol = "[❯](bold #679e8a)"
 #error_symbol = "[✗](fg:1)"
 #error_symbol = "[❯](fg:1)"
 error_symbol = "[❯](fg:9)"

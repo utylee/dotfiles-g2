@@ -2,8 +2,8 @@ sw_volume: 68
 audio_device_state:1:FLAC Stream
 audio_device_state:1:MP3 Stream
 state: play
-current: 1312
-time: 201.314000
+current: 4160
+time: 120.024000
 random: 1
 repeat: 1
 single: 0
@@ -5317,7 +5317,6 @@ playlist_begin
 5302:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/21. Debbyh - Lake Chill.mp3
 5303:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/22. Oatmello - Field Guide for the Night Sky.mp3
 5304:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/23. TV Culture - In My Home.mp3
-Prio: 255
 5305:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/26. Chill Seeker - Skyline.mp3
 5306:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/24. Thomas Reid - Fall Apart.mp3
 5307:lofi/Various Artists - Bonne Nuit - Chill LoFi (2023) Mp3 320kbps [PMEDIA] ⭐️/25. Lofi Lizard - Fauna.mp3

@@ -25,6 +25,7 @@ $python\
 $username\
 $directory\
 $git_branch$git_commit\
+$package$nodejs$rust$python
 $character\
 """
 [character]
@@ -33,15 +34,15 @@ $character\
 # success_symbol = "[❯](bold #39706b)"
 # success_symbol = "[❯](bold #47a198)"
 success_symbol = "[❯](bold #679e8a)"
-#error_symbol = "[✗](fg:1)"
+error_symbol = "[✗](fg:1)"
 #error_symbol = "[❯](fg:1)"
-error_symbol = "[❯](fg:9)"
-#vicmd_symbol = "[N](fg:15 bold)"
+# error_symbol = "[❯](fg:9)"
+vicmd_symbol = "[N](fg:15 bold)"
 #vicmd_symbol = "[⚡](fg:15 bold)"
-#vicmd_symbol = "[\uE0D2](fg:5)"
-#vicmd_symbol = "[\uE0B2](fg:15)"
-vicmd_symbol = "[\uE0B9](fg:15)"
-#vicmd_symbol = "[V](fg:15)"
+# vicmd_symbol = "[\uE0D2](fg:5)"
+# vicmd_symbol = "[\uE0B2](fg:15)"
+# vicmd_symbol = "[\uE0B9](fg:15)"
+# vicmd_symbol = "[V](fg:15)"
 
 #vicmd_symbol = "[❮](bold #207dab)"
 

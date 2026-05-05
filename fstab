@@ -1,18 +1,15 @@
-#UUID=e139ce78-9841-40fe-8823-96a304a09859 / ext4 errors=remount-ro,noatime 0 1
-LABEL=boot /media/boot vfat defaults 0 1
-/dev/sda1 / ext4 defaults,noatime 0 1
-UUID=e139ce78-9841-40fe-8823-96a304a09859 /media/sdcard ext4 errors=remount-ro,noatime 0 2
-UUID=0d2915dd-380b-4f9a-817f-d4e54b76dac3 /home/utylee/media/4001 ext4 defaults,nofail,x-systemd.device-timeout=18 0 0
-# 디스크 체킹을 종종하는데 9초까지도 늘리긴 하던 예제가 있는데 보통 3초로 한다는 것 같습니다
-#       3초로 하니 실패해서 9초로 해보니 성공했습니다
-UUID=367b96f6-4c92-477a-baee-ca0faca99a24 /home/utylee/media/4002 ext4 defaults,nofail,x-systemd.device-timeout=18 0 0
+# /etc/fstab: static file system information.
+#
+# Use 'blkid' to print the universally unique identifier for a
+# device; this may be used with UUID= as a more robust way to name devices
+# that works even if disks are added and removed. See fstab(5).
+#
+# <file system> <mount point>   <type>  <options>       <dump>  <pass>
+# / was on /dev/sda2 during installation
+UUID=5fa8c9ee-be35-434f-a24d-77a926cb9b6b /               ext4    errors=remount-ro 0       1
+# /boot/efi was on /dev/sda1 during installation
+UUID=56CC-C813  /boot/efi       vfat    umask=0077      0       1
+/swapfile                                 none            swap    sw              0       0
 
-# 14.04까지만 있던 옵션입니다. deprecated되었습니다
-#UUID=367b96f6-4c92-477a-baee-ca0faca99a24 /home/odroid/media/4002 ext4 defaults,nobootwait 0 0
-
-
-#//192.168.0.201/clark /home/odroid/media cifs username=utylee,password=sksmsqnwk11 0 0
-#//192.168.0.201/clark /mnt/clark cifs username=utylee,password=sksmsqnwk11,iocharset=utf8,file_mode=0777,dir_mode=0777,uid=odroid,gid=odroid,noauto,x-systemd.automount 0 0
-
-
-
+//192.168.1.122/8001 /home/utylee/media/8001 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,x-systemd.device-timeout=18,file_mode=0777,dir_mode=0777  0 0
+//192.168.1.204/5003 /home/utylee/media/5003 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,x-systemd.device-timeout=18,file_mode=0777,dir_mode=0777  0 0

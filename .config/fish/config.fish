@@ -1,3 +1,6 @@
+function greet
+    echo 'Hello, world!'
+end
 if status is-interactive
 	# CURSOR
 	#echo -ne '\eP\e]13;#5F5FAF\a'   # HC1
@@ -35,13 +38,14 @@ set CLANGHOME /usr/local/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04
 set -l NODEHOME /usr/local/node-v22.18.0-linux-x64
 set -x PATH $CLANGHOME/bin $PATH
 set -x PATH $HOME/.go/bin /usr/local/go1.17.3/bin $NODEHOME/bin $PATH
+fish_add_path /home/utylee/temp/opencode/packages/opencode/dist/opencode-linux-x64/bin /home/utylee/temp/bin
 set -gx CC $CLANGHOME/bin/clang
 set -gx CXX $CLANGHOME/bin/clang++
 set -gx LD_LIBRARY_PATH $CLANGHOME/lib $LD_LIBRARY_PATH 
 
 # FZF
 # fzf을 직접입력해 파일명 탐색 명내용 
-set -gx FZF_DEFAULT_COMMAND 'fd --type file --color=always --follow --hidden --exclude .git'
+# set -gx FZF_DEFAULT_COMMAND 'fd --type file --color=always --follow --hidden --exclude .git'
 set -gx FZF_DEFAULT_OPTS "--ansi"
 #
 #set -gx FZF_CTRL_T_COMMAND "fd --type d --hidden --color=always"
@@ -51,7 +55,7 @@ set -gx FZF_ALT_C_COMMAND "fd --type d --hidden --color=always"
 set -gx FZF_CTRL_R_OPTS "--reverse --height 100%"
 #set -gx FZF_CTRL_T_COMMAND "$FZF_DEFAULT_COMMAND"
 
-#set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --follow --no-ignore"
+set -gx FZF_DEFAULT_COMMAND "rg --files --hidden --follow --no-ignore"
 #set -gx FZF_CTRL_T_COMMAND "rg --files --hidden --follow --no-ignore"
 #set -gx FZF_CTRL_T_COMMAND "rg --files --hidden --follow --no-ignore"
 #set -gx FZF_ALT_C_COMMAND "find . -depth"
@@ -62,3 +66,7 @@ set -gx FZF_CTRL_R_OPTS "--reverse --height 100%"
 set -gx WORKON_HOME $HOME/.virtualenvs
 
 #source ~/.mintty-colors-solarized/mintty-solarized-dark.sh
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH

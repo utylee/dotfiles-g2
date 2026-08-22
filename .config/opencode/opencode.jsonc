@@ -67,24 +67,90 @@
         "qwen3.6-35b": {
           "name": "Qwen3.6-35b-a4b-Q4.gguf"
         },
-        "qwen3.6-27b": {
-          "name": "Qwen3.6-27b-Q4.gguf"
-        }
-      }
+        "qwen3.8-27b": {
+          "name": "Qwen3.8-27b-Q4.gguf",
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
+      },
     },
     "llamacpp-m5": {
       "npm": "@ai-sdk/openai-compatible",
       "name": "llm5",
       "options": {
         "baseURL": "http://llm5.utylee.mywire.org/v1/",
-        // "baseURL": "http://192.168.1.122:8080/v1/",
+        // "baseURL": "http://192.168.1.122:8081/v1/",
         "apiKey": "not-needed"
       },
       "models": {
         "qwen3-122b-a10b": {
-          "name": "glm4.7-flash.gguf"
-        }
-      }
+          "name": "glm4.7-flash.gguf",
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
+      },
     },
     "llamacpp-m5-2": {
       "npm": "@ai-sdk/openai-compatible",
@@ -97,9 +163,42 @@
       },
       "models": {
         "qwen3-122b-a10b": {
-          "name": "Qwen3-122b-a10b.gguf"
-        }
-      }
+          "name": "Qwen3-122b-a10b.gguf",
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
+      },
     },
     "llamacpp-m5-3": {
       "npm": "@ai-sdk/openai-compatible",
@@ -112,9 +211,42 @@
       },
       "models": {
         "qwen3-122b-a10b": {
-          "name": "Qwen3-122b-a10b.gguf"
-        }
-      }
+          "name": "Qwen3-122b-a10b.gguf",
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
+      },
     },
     "llamacpp-m5-4": {
       "npm": "@ai-sdk/openai-compatible",
@@ -127,9 +259,42 @@
       },
       "models": {
         "qwen3-122b-a10b": {
-          "name": "Qwen3-122b-a10b.gguf"
-        }
-      }
+          "name": "Qwen3-122b-a10b.gguf",
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
+      },
     },
     "llamacpp-mac2": {
       "npm": "@ai-sdk/openai-compatible",

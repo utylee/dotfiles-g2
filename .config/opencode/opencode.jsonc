@@ -11,7 +11,44 @@
       },
       "models": {
         "qwen3.5-35b-a3b": {
-          "name": "Qwen3.5-35B-A3B-UD-Q4_K_M.gguf"
+          "name": "Qwen3.5-35B-A3B-UD-Q4_K_M.gguf",
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
         },
         "glm4.7-flash": {
           "name": "GLM-4.7-Flash-UD-Q4_K_XL.gguf"
@@ -26,12 +63,50 @@
         "apiKey": "not-needed"
       },
       "models": {
-        "glm4.7-flash": {
-          "name": "GLM-4.7-Flash-UD-Q4_K_XL.gguf"
-        },
         "qwen3.5-35b-a3b": {
           "name": "Qwen3.5-35B-A3B-UD-Q4_K_M.gguf"
-        }
+        },
+        "qwen3.8-27-iq4": {
+          "name": "Qwen3.8-27B-UD-IQ4_XS.gguf",
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
+
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
+		}
       }
     },
     "llamacpp-ccy": {
@@ -69,6 +144,10 @@
         },
         "qwen3.8-27b": {
           "name": "Qwen3.8-27b-Q4.gguf",
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",
@@ -116,6 +195,11 @@
       "models": {
         "qwen3-122b-a10b": {
           "name": "glm4.7-flash.gguf",
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
+
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",

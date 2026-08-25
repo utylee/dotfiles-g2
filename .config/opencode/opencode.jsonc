@@ -16,6 +16,11 @@
 			"input": ["text", "image"],
 			"output": ["text"]
 		  },
+		  "limit": {
+		    "context": 65536,
+		    "input": 53248,
+		    "output": 12288
+		  },
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",
@@ -63,16 +68,17 @@
         "apiKey": "not-needed"
       },
       "models": {
-        "qwen3.5-35b-a3b": {
-          "name": "Qwen3.5-35B-A3B-UD-Q4_K_M.gguf"
-        },
-        "qwen3.8-27-iq4": {
-          "name": "Qwen3.8-27B-UD-IQ4_XS.gguf",
+        "qwen3.8-27b-xxs": {
+          "name": "Qwen3.8-27B-UD-IQ3_XXS.gguf",
 		  "modalities": {
 			"input": ["text", "image"],
 			"output": ["text"]
 		  },
-
+		  "limit": {
+		    "context": 65536,
+		    "input": 53248,
+		    "output": 12288
+		  },
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",
@@ -139,11 +145,58 @@
         "apiKey": "not-needed"
       },
       "models": {
-        "qwen3.6-35b": {
-          "name": "Qwen3.6-35b-a4b-Q4.gguf"
+        "huiqwen3.8-27b": {
+          "name": "Huihui-Qwen3.8-27B-abliterated-UD-IQ4_XS.gguf",
+		  "limit": {
+		    "context": 65536,
+		    "input": 53248,
+		    "output": 12288
+		  },
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
+		  "variants": {
+			"none": {
+			  "reasoningEffort": "none",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"low": {
+			  "reasoningEffort": "low",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"medium": {
+			  "reasoningEffort": "medium",
+			  "temperature": 0.7,
+			  "top_p": 0.8,
+			  "top_k": 20,
+			  "presence_penalty": 1.5
+			},
+
+			"xhigh": {
+			  "reasoningEffort": "xhigh",
+			  "temperature": 1.0,
+			  "top_p": 0.95,
+			  "top_k": 20,
+			  "presence_penalty": 0.0
+			}
+		  }
         },
         "qwen3.8-27b": {
-          "name": "Qwen3.8-27b-Q4.gguf",
+          "name": "Qwen3.8-27b-Q4-K-M.gguf",
+		  "limit": {
+		    "context": 81920,
+			"input": 65536,
+			"output": 16384
+	  	  },
 		  "modalities": {
 			"input": ["text", "image"],
 			"output": ["text"]
@@ -199,7 +252,11 @@
 			"input": ["text", "image"],
 			"output": ["text"]
 		  },
-
+		  "limit": {
+		    "context": 81920,
+			"input": 65536,
+			"output": 16384
+	  	  },
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",
@@ -246,8 +303,21 @@
         "apiKey": "not-needed"
       },
       "models": {
-        "qwen3-122b-a10b": {
+        "huihuiqwen3.8-27b": {
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
           "name": "Qwen3-122b-a10b.gguf",
+		  "modalities": {
+			"input": ["text", "image"],
+			"output": ["text"]
+		  },
+		  "limit": {
+		    "context": 81920,
+			"input": 65536,
+			"output": 16384
+	  	  },
 		  "variants": {
 			"none": {
 			  "reasoningEffort": "none",

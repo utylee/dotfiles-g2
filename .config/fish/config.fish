@@ -26,6 +26,8 @@ set -Ux fish_term24bit 1
 set -gx EDITOR /usr/bin/vi
 set -gx GHQ_ROOT /home/utylee/.ghq
 
+set -x HERMES_HOME /home/utylee/temp/hermes
+
 set -x LANG ko_KR.UTF-8
 set -x LANGUAGE ko_KR:ko
 set -x LC_ALL ko_KR.UTF-8
@@ -38,7 +40,7 @@ set CLANGHOME /usr/local/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04
 set -l NODEHOME /usr/local/node-v22.18.0-linux-x64
 set -x PATH $CLANGHOME/bin $PATH
 set -x PATH $HOME/.go/bin /usr/local/go1.17.3/bin $NODEHOME/bin $PATH
-fish_add_path /home/utylee/temp/opencode/packages/opencode/dist/opencode-linux-x64/bin /home/utylee/temp/bin
+fish_add_path /home/utylee/temp/godot /home/utylee/temp/opencode/packages/opencode/dist/opencode-linux-x64/bin /home/utylee/temp/bin
 set -gx CC $CLANGHOME/bin/clang
 set -gx CXX $CLANGHOME/bin/clang++
 set -gx LD_LIBRARY_PATH $CLANGHOME/lib $LD_LIBRARY_PATH 
@@ -70,3 +72,6 @@ set -gx WORKON_HOME $HOME/.virtualenvs
 # bun
 set --export BUN_INSTALL "$HOME/.bun"
 set --export PATH $BUN_INSTALL/bin $PATH
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+fish_add_path "$HOME/.local/bin"

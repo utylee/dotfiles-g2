@@ -14,3 +14,4 @@ UUID=56CC-C813  /boot/efi       vfat    umask=0077      0       1
 //192.168.1.122/8001 /home/utylee/media/8001 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,_netdev,nofail,x-systemd.automount,x-systemd.mount-timeout=10s,file_mode=0777,dir_mode=0777  0 0
 //192.168.1.204/4003 /home/utylee/media/4003 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,_netdev,nofail,x-systemd.automount,x-systemd.mount-timeout=10s,file_mode=0777,dir_mode=0777  0 0
 //192.168.1.204/5003 /home/utylee/media/5003 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,_netdev,nofail,x-systemd.automount,x-systemd.mount-timeout=10s,file_mode=0777,dir_mode=0777  0 0
+//192.168.1.122/4002 /home/utylee/media/4002 cifs username=utylee,password=sksmsqnwk11,uid=1000,gid=1000,_netdev,nofail,x-systemd.automount,x-systemd.mount-timeout=10s,file_mode=0777,dir_mode=0777  0 0

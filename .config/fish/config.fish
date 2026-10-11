@@ -32,6 +32,13 @@ set -x LANG ko_KR.UTF-8
 set -x LANGUAGE ko_KR:ko
 set -x LC_ALL ko_KR.UTF-8
 
+set -gx RUSTY_V8_ARCHIVE \
+    ~/.cache/codex-v8/150.4.0/librusty_v8_ptrcomp_sandbox_release_x86_64-unknown-linux-gnu.a.gz
+
+set -gx RUSTY_V8_SRC_BINDING_PATH \
+	~/.cache/codex-v8/150.4.0/src_binding_ptrcomp_sandbox_release_x86_64-unknown-linux-gnu.rs
+
+
 # PATH
 #set CLANGHOME /usr/local/clang-14-dev
 #set CLANGHOME /usr/local/clang+llvm-12.0.1-armv7a-linux-gnueabihf

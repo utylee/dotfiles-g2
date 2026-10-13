@@ -47,7 +47,11 @@ set CLANGHOME /usr/local/clang+llvm-17.0.6-x86_64-linux-gnu-ubuntu-22.04
 set -l NODEHOME /usr/local/node-v22.18.0-linux-x64
 set -x PATH $CLANGHOME/bin $PATH
 set -x PATH $HOME/.go/bin /usr/local/go1.17.3/bin $NODEHOME/bin $PATH
-fish_add_path /home/utylee/temp/godot /home/utylee/temp/opencode/packages/opencode/dist/opencode-linux-x64/bin /home/utylee/temp/bin
+fish_add_path /home/utylee/temp/godot /home/utylee/temp/opencode-utylee/packages/cli/dist/cli-linux-x64/bin /home/utylee/temp/bin
+# fish_add_path /home/utylee/temp/godot /home/utylee/temp/opencode/packages/cli/dist/cli-linux-x64/bin /home/utylee/temp/bin
+# fish_add_path /home/utylee/temp/godot /home/utylee/temp/opencode/packages/opencode/dist/opencode-linux-x64/bin /home/utylee/temp/bin
+
+# /home/utylee/temp/opencode/packages/cli/dist/cli-linux-x64/bin
 set -gx CC $CLANGHOME/bin/clang
 set -gx CXX $CLANGHOME/bin/clang++
 set -gx LD_LIBRARY_PATH $CLANGHOME/lib $LD_LIBRARY_PATH 
